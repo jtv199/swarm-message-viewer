@@ -1,5 +1,7 @@
 # Swarm Message Viewer
 
+**[Try the live demo](https://jtv199.github.io/swarm-message-viewer/)** — runs in your browser with synthetic messages.
+
 Explore communication in your own agent swarm as an interactive directed graph. Replay occupied time intervals or individual messages, search text and IDs, filter a UTC date range, build the graph over time, and click an agent, room, or connection to inspect its messages.
 
 The bundled example is entirely synthetic: three agents planning, building, and reviewing a small task board. This repository contains no real conversation transcripts or research datasets.
