@@ -1,0 +1,116 @@
+{
+  "agents": [
+    {
+      "id": "planner",
+      "name": "Planner"
+    },
+    {
+      "id": "builder",
+      "name": "Builder"
+    },
+    {
+      "id": "reviewer",
+      "name": "Reviewer"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "work",
+      "name": "work"
+    },
+    {
+      "id": "review",
+      "name": "review"
+    }
+  ],
+  "messages": [
+    {
+      "id": "m1",
+      "timestamp": "2026-01-01T09:00:00Z",
+      "sender": "planner",
+      "room": "work",
+      "recipients": [],
+      "text": "We need a small task board for our demo."
+    },
+    {
+      "id": "m2",
+      "timestamp": "2026-01-01T09:05:00Z",
+      "sender": "planner",
+      "room": "work",
+      "recipients": [
+        "builder"
+      ],
+      "text": "Please build the task list component."
+    },
+    {
+      "id": "m3",
+      "timestamp": "2026-01-01T09:10:00Z",
+      "sender": "builder",
+      "room": "work",
+      "recipients": [
+        "planner"
+      ],
+      "text": "I will add create and complete actions."
+    },
+    {
+      "id": "m4",
+      "timestamp": "2026-01-01T09:15:00Z",
+      "sender": "planner",
+      "room": "work",
+      "recipients": [
+        "builder",
+        "reviewer"
+      ],
+      "text": "Let us agree on the acceptance checks."
+    },
+    {
+      "id": "m5",
+      "timestamp": "2026-01-01T09:20:00Z",
+      "sender": "reviewer",
+      "room": "review",
+      "recipients": [],
+      "text": "Checks: create a task, complete it, and reload."
+    },
+    {
+      "id": "m6",
+      "timestamp": "2026-01-01T09:25:00Z",
+      "sender": "builder",
+      "room": "review",
+      "recipients": [
+        "reviewer"
+      ],
+      "text": "The component is ready for review."
+    },
+    {
+      "id": "m7",
+      "timestamp": "2026-01-01T09:30:00Z",
+      "sender": "reviewer",
+      "room": "review",
+      "recipients": [
+        "builder"
+      ],
+      "text": "The reload check failed. Save state before rendering."
+    },
+    {
+      "id": "m8",
+      "timestamp": "2026-01-01T09:35:00Z",
+      "sender": "builder",
+      "room": "review",
+      "recipients": [
+        "reviewer",
+        "planner"
+      ],
+      "text": "Fixed persistence and repeated all three checks."
+    },
+    {
+      "id": "m9",
+      "timestamp": "2026-01-01T09:40:00Z",
+      "sender": "reviewer",
+      "room": "review",
+      "recipients": [
+        "planner"
+      ],
+      "text": "All checks pass. Ready for the demo."
+    }
+  ]
+}

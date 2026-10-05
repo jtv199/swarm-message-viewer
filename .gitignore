@@ -1,0 +1,8 @@
+inputs/
+generated/
+.ai/
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+.DS_Store
