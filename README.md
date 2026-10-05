@@ -1,4 +1,4 @@
-# Swarm Message Viewer
+# SIFT — Swarm Investigation and Forensic Tracing
 
 **[Try the live demo](https://jtv199.github.io/swarm-message-viewer/)** — runs in your browser with synthetic messages.
 
